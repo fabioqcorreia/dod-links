@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOpsDays Recife links</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
@@ -18,36 +19,37 @@
     body {
         margin: 0;
         background: rgb(255, 255, 255);
-        background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,182,0,1) 56%, rgba(247,255,0,1) 100%);
     }
 
     .flex-container {
         height: 100%;
+        width: auto;
         padding: 0;
         margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        align-content: center;
+        flex-flow: column;
     }
 
-    .row {
-        width: auto;
+    .row-flex {
+        width: 40%;
     }
 
     .flex-item {
         font-family: 'Barlow';
-        font-weight: 400;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: bold;
         padding: 5px;
         width: auto;
         height: auto;
         margin: 10px;
-        line-height: 100%;
         border-radius: 5px;
         border: 1px solid black;
-        color: white;
+        color: black;
         font-size: 2em;
         text-align: center;
+        align-self: center;
     }
 
     a {
@@ -56,19 +58,15 @@
     }
 
     a:hover {
-        color: #fbff13;
         text-decoration:none; 
         cursor:pointer;  
     }
 
     .header {
-        font-family: 'Barlow';
-        font-weight: 700;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         padding: 5px;
-        margin-bottom: 20%;
+        margin-bottom: 2em;
         border-radius: 5px;
-        color: white;
+        color: black;
         font-size: 2em;
         text-align: center;
         border: none !important;
@@ -78,31 +76,53 @@
         margin: auto 3% auto auto;
     }
 
+    .green:hover {
+        color: #00C23E;
+        text-decoration:none; 
+        cursor:pointer;  
+    }
+
+    .yellow:hover {
+        color: #F8F400;
+        text-decoration:none; 
+        cursor:pointer;  
+    }
+
+    .red:hover {
+        color: #D50000;
+        text-decoration:none; 
+        cursor:pointer;  
+    }
+
+    .blue:hover {
+        color: #0044C7;
+        text-decoration:none; 
+        cursor:pointer;
+    }
+
 </style>
 <body>
     <div class="flex-container">
-        <div class="row">
-            <div>
-                <h3 class="header">
-                    Links DevOpsDays Recife
-                </h3>
+        <div class="row-flex">
+            <div class="header">
+                <img width="50%" height="50%" src="dodrec.svg" alt="Logo DevOpsDays Recife">
             </div>
-            <div class="flex-item">
+            <div class="flex-item red">
                 <a href="https://www.instagram.com/devopsdaysrec/" target="_blank"><i class="fa-brands fa-instagram icon-spacing"></i>Instagram</a>
             </div>
-            <div class="flex-item">
+            <div class="flex-item green">
                 <a href="https://twitter.com/devopsdaysrec" target="_blank"><i class="fa-brands fa-x-twitter icon-spacing"></i>Twitter</a>
             </div>
-            <div class="flex-item">
+            <div class="flex-item blue">
                 <a href="https://www.linkedin.com/company/devopsdaysrec/" target="_blank"><i class="fa-brands fa-linkedin icon-spacing"></i>LinkedIn</a>
             </div>
-            <div class="flex-item">
+            <div class="flex-item yellow">
                 <a href="https://www.sympla.com.br/meetup-github---indo-alem-do-versionamento-do-codigo__2122474" target="_blank"><i class="fa-solid fa-link icon-spacing"></i>Sympla Meetup GitHub</a>
             </div>
-            <div class="flex-item">
+            <div class="flex-item red">
                 <a href="https://devopsdays.org" target="_blank"><i class="fa-solid fa-link icon-spacing"></i>Mais eventos DevOpsDays!</a>
             </div>
-            <div class="flex-item">
+            <div class="flex-item green">
                 <a href="mailto:recife@devopsdays.org" target="_blank"><i class="fa-regular fa-envelope icon-spacing"></i>Contato / Patrocínio</a>
             </div>
         </div>
@@ -110,5 +130,5 @@
 </body>
 <!-- Vercel SEO statistics -->
 <script defer src="/_vercel/insights/script.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
