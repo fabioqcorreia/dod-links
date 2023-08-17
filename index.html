@@ -10,15 +10,21 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+    @viewport {
+        width: device-width;
+        zoom: 1.0;
+    }
 
     html,
     body {
         height: 100%;
+        /*background-image: url('./bg3.png');
+        background-repeat: no-repeat;
+        background-size: cover;*/
     }
 
     body {
         margin: 0;
-        background: rgb(255, 255, 255);
     }
 
     .flex-container {
@@ -30,7 +36,7 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        flex-flow: column;
+        flex-direction: column;
     }
 
     .row-flex {
@@ -98,6 +104,12 @@
         color: #0044C7;
         text-decoration:none; 
         cursor:pointer;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .row-flex {
+            width: 100%;
+        }
     }
 
 </style>
