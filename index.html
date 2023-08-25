@@ -40,7 +40,7 @@
     }
 
     .row-flex {
-        width: 40%;
+        width: 26%;
     }
 
     .flex-item {
@@ -53,7 +53,7 @@
         border-radius: 5px;
         border: 1px solid black;
         color: black;
-        font-size: 2em;
+        font-size: 1.2em;
         text-align: center;
         align-self: center;
     }
@@ -70,16 +70,12 @@
 
     .header {
         padding: 5px;
-        margin-bottom: 2em;
-        border-radius: 5px;
-        color: black;
-        font-size: 2em;
+        margin: 1em;
         text-align: center;
-        border: none !important;
     }
 
     .icon-spacing {
-        margin: auto 3% auto auto;
+        margin: 3%;
     }
 
     .green:hover {
@@ -106,9 +102,25 @@
         cursor:pointer;
     }
 
+    .subtitle {
+        font-size: 0.9em;
+        color: #8692a8;
+        text-align: center;
+        text-size-adjust: inherit;
+        margin: 2em;
+    }
+
+    .footer {
+        font-size: 0.9em;
+        color: #8692a8;
+        text-align: center;
+        text-size-adjust: inherit;
+        margin: 2em;
+    }
+
     @media only screen and (max-width: 600px) {
         .row-flex {
-            width: 100%;
+            width: 90%;
         }
     }
 
@@ -117,7 +129,12 @@
     <div class="flex-container">
         <div class="row-flex">
             <div class="header">
-                <img width="50%" height="50%" src="dodrec.svg" alt="Logo DevOpsDays Recife">
+                <img width="70%" height="70%" src="dodrec.svg" alt="Logo DevOpsDays Recife">
+            </div>
+            <div>
+                <h2 class="subtitle">
+                    Vem aí o maior evento de DevOps em linha reta do mundo!
+                </h2>
             </div>
             <div class="flex-item red">
                 <a href="https://www.instagram.com/devopsdaysrec/" target="_blank"><i class="fa-brands fa-instagram icon-spacing"></i>Instagram</a>
@@ -136,6 +153,9 @@
             </div>
             <div class="flex-item green">
                 <a href="mailto:recife@devopsdays.org" target="_blank"><i class="fa-regular fa-envelope icon-spacing"></i>Contato / Patrocínio</a>
+            </div>
+            <div class="footer">
+                <p>@devopsdaysrec</p>
             </div>
         </div>
     </div>
